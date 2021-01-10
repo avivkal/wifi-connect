@@ -178,11 +178,11 @@ install_wfc() {
 
     ensure sudo mkdir -p $INSTALL_UI_DIR
 
-    #ensure sudo rm -rdf $INSTALL_UI_DIR
+    ensure sudo rm -rdf $INSTALL_UI_DIR
 
     ensure sudo mv "$_download_dir/ui" $INSTALL_UI_DIR
 
-    #ensure rm -rdf "$_download_dir"
+    ensure rm -rdf "$_download_dir"
 
     _wfc_version=$(ensure wifi-connect --version)
 
